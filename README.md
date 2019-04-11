@@ -27,8 +27,9 @@ This project will be implemented with the following technologies:
 - `JavaScript` for game logic,
 - `HTML5 canvas` for rendering visuals
 
-In addition to the entry file, there will be three scripts involved in this project:
+In addition to the entry file, there will be four scripts involved in this project:
 
+`game.js`: will be the entry file that actually runs the game
 `display.js`: will handle the logic of which level to display (or instructions)
 `level.js`: will contain the layouts of wall placement and initial pixel placement
 `character.js`: will contain information on the `position` of each `character` object and whether the `character` `type` is "enemy" or "user." Enemy characters will have logic for determining their `next_move`.
