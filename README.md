@@ -46,8 +46,9 @@ In addition to the entry file, there will be four scripts involved in this proje
 - [ ] Allow users to control their `character`
 - [ ] After a user moves, enemy `character`s move towards the user
 
-**Day 3**: Add new `level`s. Goals for the day:
+**Day 3**: Add new `level`s and "Lose Screen". Goals for the day:
 
+- [ ] Add "Lose Screen" when user is caught
 - [ ] Complete the wall arrangements for all levels
 - [ ] Complete initial `character` positions for all levels
 
