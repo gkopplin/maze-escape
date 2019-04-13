@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    entry: './lib/game.js',
+    entry: './lib/maze_escape.js',
     output: {
         filename: './bundle.js'
     },
