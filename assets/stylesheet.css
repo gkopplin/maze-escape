@@ -1,3 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('./bg.jpg');
+    background-size: 100% 100%;
+}
+
+body * {
+    margin: 20px;
+}
+
 .hidden {
     visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.logo {
+    width: 30%;
+    height: 30%;
+}
+
+p {
+    width: 720px;
+    height: 645px;
+    color: white;
 }
