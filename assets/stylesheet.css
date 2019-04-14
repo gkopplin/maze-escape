@@ -12,9 +12,7 @@ body * {
 }
 
 .hidden {
-    visibility: hidden;
-    width: 0;
-    height: 0;
+    display: none;
 }
 
 .logo {
@@ -26,4 +24,21 @@ p {
     width: 720px;
     height: 645px;
     color: white;
+}
+
+svg {
+    width: 48px;
+    height: 48px;
+    margin: 0;
+}
+
+#root {
+    height: 645px;
+    width: 720px;
+}
+
+.listener-screen {
+    margin: auto;
+    margin-top: 100px;
+    width: 720px;
 }
