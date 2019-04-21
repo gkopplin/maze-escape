@@ -18,7 +18,7 @@ Maze Escape is a retro, turn-based maze escape game. Each turn, the user moves t
 The key mechanic of the game is that enemy character will not move if a wall blocks its path (the user must be on the same x/y coordinate as the enemy character- the enemy will move if the user is to the side of a wall).
 
 ### <a name="functionality"></a> Functionality & MVPs 
-![screen_shot](https://github.com/gkopplin/maze-escape/blob/master/assets/maze-screen-shot.png)
+![screen_shot](https://github.com/gkopplin/maze-escape/blob/master/assets/maze-escape-screen-shot.png)
 
 Users will be able to:
 
