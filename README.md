@@ -5,15 +5,15 @@
 ### Table of Contents
 [Backgound](#background)
 
-[Functionality](#functionality)
+[Functionality and MVPs](#functionality)
 
 [Wireframes](#wireframes)
 
-[Architecture](#architecture)
+[Architecture and Technologies](#architecture)
 
-[Implementation](#implementation)
+[Implementation Timeline](#implementation)
 
-[BonusFeatures](#bonus)
+[Bonus Features](#bonus)
 
 
 ### <a name="backgound"></a> Background
