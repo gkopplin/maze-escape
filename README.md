@@ -1,7 +1,6 @@
 ## Maze Escape
 
-![logo](https://github.com/gkopplin/maze-escape/blob/master/assets/
-logo.jpg)
+![logo](https://github.com/gkopplin/maze-escape/blob/master/assets/logo.jpg)
 
 ### Table of Contents
 [Backgound](#background)
@@ -12,27 +11,27 @@ logo.jpg)
 [BonusFeatures] (#bonus)
 
 
-### <a name="backgound">/<a> Background
+### <a name="backgound"></a> Background
 
 Maze Escape is a retro, turn-based maze escape game. Each turn, the user moves their character one step, triggering the enemy characters to move one step towards the user. If an enemy character reaches the user, they must restart the level. If the user reaches the exit without being caught by an enemy character, they move onto the next level. 
 
 The key mechanic of the game is that enemy character will not move if a wall blocks its path (the user must be on the same x/y coordinate as the enemy character- the enemy will move if the user is to the side of a wall).
 
-### <a name="functionality">/<a> Functionality & MVPs 
+### <a name="functionality"></a> Functionality & MVPs 
 
 Users will be able to:
 
 - [ ] Start the game by pressing any key
 - [ ] Navigate their character through the maze using arrow keys
 
-### <a name="wireframes">/<a> Wireframes
+### <a name="wireframes"></a> Wireframes
 
 The application will only involve a single-page with the title, game rendering area, and links to external sites. The instructions will be displayed in the game rendering area before the user starts the game.
 
 ![wireframes](https://github.com/gkopplin/maze-escape/blob/master/assets/maze-escape-wireframe.jpg)
 
 
-### <a name="architecture">/<a> Architecture and Technologies
+### <a name="architecture"></a> Architecture and Technologies
 
 This project will be implemented with the following technologies:
 
@@ -46,7 +45,7 @@ In addition to the entry file, there will be four scripts involved in this proje
 `level.js`: will contain the layouts of wall placement and initial pixel placement
 `character.js`: will contain information on the `position` of each `character` object and whether the `character` `type` is "enemy" or "user." Enemy characters will have logic for determining their `next_move`.
 
-### <a name="implementation">/<a> Implementation Timeline
+### <a name="implementation"></a> Implementation Timeline
 
 **Day 1**: Create the entry file and basic set-up for `display`, `character`s, and one `level`. Goals for the day:
 
@@ -70,7 +69,7 @@ In addition to the entry file, there will be four scripts involved in this proje
 - [ ] Style the frontend
 
 
-### <a name="bonus">/<a> Bonus features
+### <a name="bonus"></a> Bonus features
 
 - [ ] Add sprites
 - [ ] Add a key/door mechanic
