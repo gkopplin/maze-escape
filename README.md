@@ -4,10 +4,15 @@
 
 ### Table of Contents
 [Backgound](#background)
+
 [Functionality](#functionality)
+
 [Wireframes](#wireframes)
+
 [Architecture](#architecture)
+
 [Implementation](#implementation)
+
 [BonusFeatures](#bonus)
 
 
