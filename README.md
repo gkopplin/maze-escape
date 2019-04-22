@@ -5,6 +5,8 @@
 ### Table of Contents
 [Backgound](#background)
 
+[Features](#features)
+
 [Functionality and MVPs](#functionality)
 
 [Wireframes](#wireframes)
@@ -21,6 +23,15 @@
 Maze Escape is a retro, turn-based maze escape game. Each turn, the user moves their character one step, triggering the enemy characters to move one step towards the user. If an enemy character reaches the user, they must restart the level. If the user reaches the exit without being caught by an enemy character, they move onto the next level. 
 
 The key mechanic of the game is that enemy character will not move if a wall blocks its path (the user must be on the same x/y coordinate as the enemy character- the enemy will move if the user is to the side of a wall).
+
+### <a name="features"></a> Features
+The following are notable features in Maze Escape. A more comprehensive description of the functionality of the game is below.
+
+### 1. Level Progression
+When a user reaches the exit of a level, the Game object will hide the HTML Canvas element and show the root div element (by modifying the classes of each). The appropriate image is also pushed into the inner HTML of the root element. A DOM keypress event listener is added to re-show the HTML Canvas element when the user is ready to progress to the next level. A similar system is set up for when the users loses a level or wins the game.
+
+### 2. Collision Detection
+If/else logic is used to determine whether a given move is valid based on the characters position and surrounding obstacles. For any given move, collisions are detected using the x position of the character and the y position plus the height of the character sprite (since characters are able to stand in front of walls, but cannot walk through them). Since the game is implemented on a 50x50 grid system, characters will always be a given distance from adjacent walls. In addition to the original position of the character, the function for determining valid moves also takes a new position that the character is attempting to travel to. The values of the new position and the orientation of the wall and used to determine if the character is attempting to walk through a wall.
 
 ### <a name="functionality"></a> Functionality & MVPs 
 ![screen_shot](https://github.com/gkopplin/maze-escape/blob/master/assets/maze-escape-screenshot.png)
