@@ -55,12 +55,14 @@ This project will be implemented with the following technologies:
 - `JavaScript` for game logic,
 - `HTML5 canvas` for rendering visuals
 
-In addition to the entry file, there will be four scripts involved in this project:
+In addition to the entry file, there will be six scripts involved in this project:
 
-`game.js`: will be the entry file that actually runs the game
-`display.js`: will handle the logic of which level to display (or instructions)
-`level.js`: will contain the layouts of wall placement and initial pixel placement
-`character.js`: will contain information on the `position` of each `character` object and whether the `character` `type` is "enemy" or "user." Enemy characters will have logic for determining their `next_move`.
+`maze_escape.js`: will be the entry file that actually runs the game
+`game.js`: will determine whether to show/hide images and the HTML Canvas element depending on the user's progression through the game
+`display.js`: will handle the logic of which level to display; will contain the layouts of wall placement and initial character placement
+`level.js`: will check valid moves and draw the characters/walls specified in the display file
+`character.js`: will contain information on the `position` of each `character` object and whether the `character` `type` is "enemy" or "user." Enemy characters will have logic for determining their `next_move`
+`sprite.js`: will be responsible for rendering sprites for each character
 
 ### <a name="implementation"></a> Implementation Timeline
 
