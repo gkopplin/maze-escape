@@ -30,8 +30,39 @@ The following are notable features in Maze Escape. A more comprehensive descript
 ### 1. Level Progression
 When a user reaches the exit of a level, the Game object will hide the HTML Canvas element and show the root div element (by modifying the classes of each). The appropriate image is also pushed into the inner HTML of the root element. A DOM keypress event listener is added to re-show the HTML Canvas element when the user is ready to progress to the next level. A similar system is set up for when the users loses a level or wins the game.
 
+Below is an example for when the user completes a level.
+```
+else if (this.display.won) {
+    if (this.display.levelNum === 2) {
+        this.endScreen();
+    } else {
+        this.canvas.classList.add("hidden");
+        this.root.classList.remove("hidden");
+        this.root.innerHTML = "<img src='./assets/escaped.jpg' class='listener-screen'>";
+        
+        this.setNextLevelListener();
+    }
+}
+```
+
 ### 2. Collision Detection
-If/else logic is used to determine whether a given move is valid based on the characters position and surrounding obstacles. For any given move, collisions are detected using the x position of the character and the y position plus the height of the character sprite (since characters are able to stand in front of walls, but cannot walk through them). Since the game is implemented on a 50x50 grid system, characters will always be a given distance from adjacent walls. In addition to the original position of the character, the function for determining valid moves also takes a new position that the character is attempting to travel to. The values of the new position and the orientation of the wall and used to determine if the character is attempting to walk through a wall.
+If/else logic is used to determine whether a given move is valid based on the characters position and surrounding obstacles. For any given move, collisions are detected using the x position of the character and the y position plus the height of the character sprite (since characters are able to stand in front of walls, but cannot walk through them). Since the game is implemented on a 50x50 grid system, characters will always be a given distance from adjacent walls. Each time a character moves, the array of walls is iterated over to confirm that no wall blocks the characters path. In addition to the original position of the character, the function for determining valid moves also takes a new position that the character is attempting to travel to. The values of the new position and the orientation of the wall and used to determine if the character is attempting to walk through a wall.
+
+This code snippet illustrates the logic used to detect collisions when the wall in question is longer horizontally than vertically.
+```
+if (coord[2] > coord[3]) {
+    if (
+        ((coord[1] + 45 === bottom &&
+            coord[1] - 5 === newBottom) ||
+            (coord[1] - 5 === bottom &&
+            coord[1] + 45 === newBottom)) &&
+            oldPos[0] >= coord[0] &&
+            oldPos[0] < coord[0] + coord[2] -5
+    ) {
+        return false;
+    }
+}
+```
 
 ### <a name="functionality"></a> Functionality & MVPs 
 ![screen_shot](https://github.com/gkopplin/maze-escape/blob/master/assets/maze-escape-screenshot.png)
