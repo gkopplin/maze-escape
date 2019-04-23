@@ -56,11 +56,11 @@ audio {
 
 .music-on-container, .music-off-container {
     position: absolute;
-    top: 150;
-    left: 430;
+    top: 20%;
+    left: 30%;
 }
 
 .music-on-container > svg, .music-off-container > svg {
-    width: 20px;
-    height: 20px;
+    width: 37px;
+    height: 37px;
 }
