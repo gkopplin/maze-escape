@@ -48,3 +48,11 @@ canvas {
     width: 40%;
     height: 70%;
 }
+
+audio {
+    display: none;
+}
+
+svg {
+    cursor: pointer;
+}
