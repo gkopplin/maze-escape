@@ -61,8 +61,8 @@ audio {
 }
 
 .music-on-container > svg, .music-off-container > svg {
-    width: 37px;
-    height: 37px;
+    width: 31px;
+    height: 35px;
 }
 
 svg:hover #icon {
