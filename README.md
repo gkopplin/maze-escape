@@ -1,7 +1,9 @@
 ## Maze Escape
 
 ![logo](https://github.com/gkopplin/maze-escape/blob/master/assets/logo.jpg)
+
 [Live Site](https://gkopplin.github.io/maze-escape/)
+
 
 ### Table of Contents
 [Backgound](#background)
