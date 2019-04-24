@@ -1,5 +1,6 @@
 ## Maze Escape
 
+[Live Site](https://gkopplin.github.io/maze-escape/)
 ![logo](https://github.com/gkopplin/maze-escape/blob/master/assets/logo.jpg)
 
 ### Table of Contents
