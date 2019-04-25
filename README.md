@@ -14,8 +14,6 @@
 
 [Architecture and Technologies](#architecture)
 
-[Implementation Timeline](#implementation)
-
 [Bonus Features](#bonus)
 
 
@@ -92,30 +90,6 @@ In addition to the entry file, there are six scripts involved in this project:
 `level.js`: checks valid moves and draws the characters/walls specified in the display file
 `character.js`: contains information on the `position` of each `character` object and whether the `character` `type` is "enemy" or "user." Enemy characters have logic for determining their `next_move`
 `sprite.js`: is responsible for rendering sprites for each character
-
-### <a name="implementation"></a> Implementation Timeline
-
-**Day 1**: Create the entry file and basic set-up for `display`, `character`s, and one `level`. Goals for the day:
-
-- [ ] Render a `level` with pre-defined walls
-- [ ] Render a `character`
-
-**Day 2**: Add `position` to `character`s. Add turn-based movement. Goals for the day:
-
-- [ ] Allow users to control their `character`
-- [ ] After a user moves, enemy `character`s move towards the user
-
-**Day 3**: Add new `level`s and "Lose Screen". Goals for the day:
-
-- [ ] Add "Lose Screen" when user is caught
-- [ ] Complete the wall arrangements for all levels
-- [ ] Complete initial `character` positions for all levels
-
-**Day 4**: Trigger level progression. Style frontend. Goals for the day:
-
-- [ ] When the user reaches the exit, the next level is rendered
-- [ ] Style the frontend
-- [ ] Add sprites
 
 ### <a name="bonus"></a> Bonus features
 
