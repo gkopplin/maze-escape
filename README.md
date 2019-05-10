@@ -66,7 +66,7 @@ if (coord[2] > coord[3]) {
 ### <a name="functionality"></a> Functionality & MVPs 
 ![screen_shot](https://github.com/gkopplin/maze-escape/blob/master/assets/maze-escape-screenshot.png)
 
-Users are be able to:
+Users are able to:
 
 - [ ] Start the game by pressing any key
 - [ ] Navigate their character through the maze using arrow keys
